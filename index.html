@@ -1,8 +1,68 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>document</title>
-    </head>
-    <body>
-        <h1>hello world</h1>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="relative flex justify-center items-center gap-2">
+      <img
+        class="w-full h-screen hover:scale-115 cursor-wait duration-600"
+        src="https://picsum.dev/400/300?blur=2"
+        alt=""
+      />
+      <div class=" absolute flex gap-50">
+        <div
+          class="border-1 border-transparent rounded-[20px] overflow-hidden max-w-sm p-2 bg-white/40 backdrop-blur-[5px]"
+        >
+          <div class="overflow-hidden rounded-2xl">
+            <!-- below 100 for zoom out image and more than 100 is for zoom in image and the class is hover:scale-75 -->
+            <img
+              class="w-full rounded-2xl border cursor-pointer hover:scale-115 duration-600"
+              src="https://picsum.dev/400/300?"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white">Catty</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            dignissimos accusantium temporibus esse incidunt iure sunt,
+            molestiae atque doloribus, aliquid repudiandae tempora. Quo nulla
+            sit aliquid vitae, modi illum neque.
+          </p>
+          <span
+            ><button class="hover:cursor-pointer p-2 bg-white rounded-[20px]">
+              read more
+            </button></span
+          >
+        </div>
+          <div
+          class="border-1 border-transparent rounded-[20px] overflow-hidden max-w-sm p-2 bg-black/40 backdrop-blur-[5px]"
+        >
+          <div class="overflow-hidden rounded-2xl">
+            <!-- below 100 for zoom out image and more than 100 is for zoom in image and the class is hover:scale-75 -->
+            <img
+              class="w-full rounded-2xl border cursor-pointer hover:scale-115 duration-600"
+              src="https://picsum.dev/400/300?"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white">Catty</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            dignissimos accusantium temporibus esse incidunt iure sunt,
+            molestiae atque doloribus, aliquid repudiandae tempora. Quo nulla
+            sit aliquid vitae, modi illum neque.
+          </p>
+          <span
+            ><button class="hover:cursor-pointer p-2 bg-white rounded-[20px]">
+              read more
+            </button></span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
