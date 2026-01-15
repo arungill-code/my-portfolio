@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>grid-form</title>
+    <style>
+      .grid-container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        /* border: 2px solid green; */
+        grid-template-areas:
+          "header header header"
+          "navigation main main"
+          "footer footer footer";
+      }
+      .grid-form {
+        padding: 5px
+        border: 2px solid black;
+      }
+      .header {
+        grid-area: header;
+        background-color: gray;
+        border: 2px solid black;
+      }
+      .nav {
+        grid-area: navigation;
+        background-color: whitesmoke;
+      }
+      .main {
+        grid-area: main;
+        background-color: white;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        header
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam
+        neque ratione quisquam asperiores reiciendis aliquid, consequuntur
+        perferendis excepturi iusto earum dolorum architecto, sit modi inventore
+        beatae! Itaque, earum perferendis. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Animi, quod est in culpa recusandae harum
+        nesciunt labore nostrum quo voluptates veniam adipisci maiores porro
+        velit non unde. Error, natus fugit. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Provident nisi quo repellat animi amet
+        consequatur vel quidem suscipit ex dolorum a omnis quisquam quasi
+        voluptates, voluptas tenetur aut architecto tempore. -->
+      </header>
+      <nav class="nav">navigation</nav>
+      <main class="main">main</main>
+      <footer class="footer">footer</footer>
+      <!-- <div class="grid-form">6</div>
+      <div class="grid-form">6</div>
+      <div class="grid-form">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        ducimus, amet distinctio aspernatur sit aliquam ullam sequi adipisci
+        nisi esse excepturi vel qui voluptatum omnis expedita neque nesciunt
+        voluptates sed. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Similique quas hic quisquam perferendis deleniti modi placeat alias,
+        fugiat officia et aliquam nam, qui quaerat? Corporis in vero eos
+        architecto nam! Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Est placeat odit neque eaque alias laborum deserunt! Fuga quia,
+        corporis facilis laudantium facere repudiandae sint odio beatae ipsam
+        ipsa ex harum.
+      </div>
+      <div class="grid-form">6</div>
+      <div class="grid-form">6</div> -->
+    </div>
+  </body>
+</html>

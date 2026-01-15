@@ -4,95 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style></style>
   </head>
   <body>
     <div class="h-auto">
-      <header>
-        <main class="bg-white w-full">
-          <nav class="flex gap-110 fixed bg-white w-full">
-            <div><h1 class="text-blue-700 ml-100">Brand</h1></div>
-            <div class="flex gap-4">
-              <ul class="flex gap-2 text-gray-700">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-              <button class="text-white bg-purple-700 rounded-xl">
-                Get Started
-              </button>
-            </div>
-          </nav>
-        </main>
+      <header class="w-full bg-white fixed">
+        <nav
+          class="flex justify-between h-12 items-center bg-white w-full max-w-4xl mx-auto"
+        >
+          <div><h1 class="text-purple-900 font-bold">Brand</h1></div>
+          <div class="flex gap-8">
+            <ul class="flex gap-4 text-gray-700">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <button class="text-white bg-purple-900 rounded-full py-1 px-4">
+              Get Started
+            </button>
+          </div>
+        </nav>
       </header>
-      <main class="bg-slate-100 w-full ">
-        <div class="flex gap-2 justify-center items-center">
-          <div class="mt-20 max-w-sm">
+      <main class="bg-slate-50 w-full">
+        <div class="flex gap-20 justify-center items-center max-w-4xl mx-auto">
+          <div class="mt-20">
             <h1 class="font-bold text-4xl">
               Build your
-              <h1 class="font-bold text-4xl text-blue-700">dream website</h1>
-              <h1 class="font-bold text-4xl">in minutes.</h1>
+              <span class="font-bold text-4xl text-purple-900"
+                >dream website</span
+              >
+              <span class="font-bold text-4xl">in minutes.</span>
             </h1>
-            <p class="mb-4">
+            <p class="mb-4 mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Voluptatem at impedit harum a doloribus quibusdam, esse, ab optio
               ad perspiciatis architecto facere recusandae saepe veniam. Illum
               provident dignissimos eveniet in?
             </p>
-            <button class="bg-purple-900 text-white rounded-[4px] p-2">
-              Start Free Trial
-            </button>
-            <button class="border-1 p-2 bg-white rounded-[2px]">
-              Learn More
-            </button>
+            <div class="flex gap-4">
+              <button
+                class="bg-purple-900 text-white rounded-md p-2 cursor-pointer"
+              >
+                Start Free Trial
+              </button>
+              <button
+                class="shadow-sm p-2 bg-white rounded-md cursor-pointer hover:bg-blue-200"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
           <div class="mt-20">
             <img
-              class="rounded-[6px]"
+              class="rounded-[6px] w-[1200px]"
               src="https://picsum.dev/400/300?"
               alt=""
             />
           </div>
         </div>
         <div
-          class="items-center flex justify-center mt-25 text-blue-700 flex-col"
+          class="items-center flex justify-center mt-25 text-purple-900 font-bold text-sm flex-col"
         >
-          <p><a href="#">Features</a></p>
+          <p><a href="#">FEATURES</a></p>
           <h1 class="text-2xl font-bold text-black">
             Everything you need to succeed
           </h1>
         </div>
-        <span class="flex gap-3 mt-25 justify-center items-center">
-          <div class="rounded-[4px] bg-slate-200 p-2 max-w-sm">
-            <div class="w-20 h-4">
-              <i class="fa-solid fa-cloud-bolt" style="color: #b197fc"></i>
+        <span
+          class="flex gap-6 justify-center items-center py-10 max-w-4xl mx-auto"
+        >
+          <div class="rounded-[4px] bg-slate-100 p-6 max-w-sm">
+            <div class="p-2 rounded-[6px] bg-purple-200 border-red-400 w-12">
+              <i class="fa-solid fa-cloud-bolt text-purple-900 p-2"></i>
             </div>
-            <h1 class="text-2xl font-bold">Lightening Fast</h1>
-            <p>
+            <h1 class="text-2xl font-bold mt-2">Lightening Fast</h1>
+            <p class="text-sm text-slate-700 mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               assumenda explicabo molestiae officia vel porro nam voluptatum sit
               non, est consectetur praesentium, necessitatibus laudantium in
               maxime, commodi iusto placeat. A?
             </p>
           </div>
-          <div class="rounded-[4px] bg-slate-200 p-2 max-w-sm">
-            <div class="w-20 h-4">
-              <i class="fa-solid fa-cloud-bolt" style="color: #b197fc"></i>
+          <div class="rounded-[4px] bg-slate-100 p-6 max-w-sm">
+            <div class="p-3 rounded-[6px] bg-blue-200 border-red-400 w-10">
+              <i class="fa-solid fa-mobile-screen-button text-blue-900"></i>
             </div>
-            <h1 class="text-2xl font-bold">Fully Responsive</h1>
-            <p>
+            <h1 class="text-2xl font-bold mt-2">Fully Responsive</h1>
+            <p class="text-sm text-slate-700 mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               assumenda explicabo molestiae officia vel porro nam voluptatum sit
               non, est consectetur praesentium, necessitatibus laudantium in
               maxime, commodi iusto placeat. A?
             </p>
           </div>
-          <div class="rounded-[4px] bg-slate-200 p-2 max-w-sm">
-            <div class="w-20 h-4">
-              <i class="fa-solid fa-cloud-bolt" style="color: #b197fc"></i>
+          <div class="rounded-[4px] bg-slate-100 p-6 max-w-sm">
+            <div class="p-3 rounded-[6px] bg-red-200 border-red-400 w-10">
+              <i class="fa-solid fa-check"></i>
             </div>
-            <h1 class="text-2xl font-bold">Secure By Default</h1>
-            <p>
+            <h1 class="text-2xl font-bold mt-2">Secure By Default</h1>
+            <p class="text-sm text-slate-700 mt-2">
               Lorem ipsum dolor sit consectetur adipisicing elit. Animi
               assumenda explicabo molestiae officia vel porro nam voluptatum sit
               non, est consectetur praesentium, necessitatibus laudantium in
@@ -100,23 +117,54 @@
             </p>
           </div>
         </span>
+        <section class="bg-purple-900 h-50">
+          <div class="flex justify-center items-center flex-col gap-3">
+            <h1 class="mt-10 font-bold text-2xl text-white">
+              Ready to get started?
+            </h1>
+            <p class="mt-2 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+              repellat molestiae soluta
+            </p>
+            <button
+              class="p-2 bg-white text-purple-900 rounded-3xl font-bold text-sm"
+            >
+              Create Free Account
+            </button>
+          </div>
+        </section>
       </main>
-      <footer class="bg-purple-900 h-40">
-        <div class="flex justify-center items-center">
-          <h1 class="mt-10 font-bold text-2xl text-white">
-            Ready to get started?
-          </h1>
+      <footer class="bg-black/90">
+        <div class="flex gap-30 justify-center p-20">
+          <div class="text-white max-w-sm">
+            <h1 class="font-bold mb-3">Brand.</h1>
+            <p class="text-slate-100 text-sm flex-col flex gap-2">
+              Making web developmment more easier and accessible for everyone.
+              Built with passion and code.
+            </p>
+          </div>
+          <div class="text-white max-w-sm">
+            <h1 class="font-bold mb-3">Product</h1>
+            <ul class="text-slate-200 text-sm flex-col flex gap-2">
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+          <div class="text-white max-w-sm">
+            <h1 class="font-bold mb-3">Company</h1>
+            <ul class="text-slate-200 text-sm flex-col flex gap-2">
+              <li>About</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
-        <div class="flex justify-center items-center">
-          <p class="mt-2 font-bold text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-            repellat molestiae soluta
+        <section class="border border-white/20"></section>
+        <div class="flex justify-center items-center p-4">
+          <p class="text-white text-sm">
+            @ 2023 Brand Inc. All rights reserved.
           </p>
-        </div>
-        <div class="flex justify-center items-center mt-2">
-          <button class="p-2 bg-white text-purple-900 rounded-xl">
-            Create Free Account
-          </button>
         </div>
       </footer>
     </div>
